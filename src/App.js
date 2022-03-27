@@ -18,6 +18,9 @@ function App() {
                     Learn React
                 </a>
             </header>
+
+            <img src={logo} className="App-logo" alt="logo" />
+            <p>Hello World! CI/CD!</p>
         </div>
     );
 }
