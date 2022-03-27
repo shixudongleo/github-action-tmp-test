@@ -24,9 +24,19 @@ jobs:
       - run: npm test -- --coverage
         env: 
           CI: true
+      - name: upload test --coverage
+        uses: actions/upload-artifacts@v1
+        with:
+          name: code-coverage
+          path: coverage
       - name: build project
         if: github.event_name == 'push'
         run: npm run build
+      - name: upload build artifacts
+        uses: actions/upload-artifacts@v1
+        with:
+          name: code-build
+          path: build
       - run: npm install -g surge
       - name: Deploy to staging
         if: github.event_name == 'push'
