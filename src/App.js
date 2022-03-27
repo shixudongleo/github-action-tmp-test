@@ -20,9 +20,7 @@ function App() {
             </header>
 
             <img src={logo} className="App-logo" alt="logo" />
-            <p>
-                Hello World! CI/CD!
-            </p>
+            <p>Hello World! CI/CD!</p>
         </div>
     );
 }
