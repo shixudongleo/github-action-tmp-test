@@ -1,0 +1,4 @@
+* @shixudongleo
+*.js @shixudongleo
+*.yml @xudong-sph
+/public/ @shixudongleo
