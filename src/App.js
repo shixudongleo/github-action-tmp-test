@@ -21,6 +21,7 @@ function App() {
 
             <img src={logo} className="App-logo" alt="logo" />
             <p>Hello World! CI/CD!</p>
+            <p>Hello Assets, Codecov and Production Deployment!</p>
         </div>
     );
 }
